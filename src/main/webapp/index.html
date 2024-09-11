@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+  <title>Survey</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Styles/main.css" type="text/css"/>
+</head>
+<body>
+<img src="murach.png" alt="Murach">
+<h1>Survey</h1>
+<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+<h2>Your information</h2>
+<form action="SurveyList" method="post">
+  <input type="hidden" name="action" value="add">
+
+  <label>First Name</label>
+  <input type="text" name="firstName" required><br>
+
+  <label>Last Name</label>
+  <input type="text" name="lastName" required><br>
+
+  <label>Email</label>
+  <input type="email" name="email" required><br>
+
+  <label>Date of birth</label>
+  <input type="date" name="date" required><br>
+
+  <h2>How did you hear about us?</h2>
+  <input type="radio" name="idea" value="Search engien">Search engien
+  <input type="radio" name="idea" value="Word of mouth">Word of mouth
+  <input type="radio" name="idea" value="Social Media">Social Media
+  <input type="radio" name="idea" value="Other">Other
+
+  <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+  <input type="checkbox" name="announcements" value="YES, I'd like that">YES, I'd like that<br>
+  <input type="checkbox" name="announcements" value="YES, please send me email announcements">YES, please send me email announcements<br>
+
+  <label style='font-weight: normal; width: 155px'>Please contact me by:</label>
+  <select id="contact" name="option">
+    <option value="Email or postal">Email or postal</option>
+    <option value="Only email">Only email</option>
+    <option value="Both">Both</option>
+  </select>
+
+  <label>&nbsp;</label>
+  <input type="submit" value="Join Now" id="submit">
+</form>
+
+
+</body>
+</html>
